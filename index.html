@@ -3,35 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graduation Project Presentation</title>
-    <!-- استدعاء مكتبة Reveal.js للعروض التقديمية -->
+    <title>Graduation Project Presentation - Final Version</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/simple.min.css">
-    <!-- استدعاء الأيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- استدعاء مكتبة Chart.js للرسوم البيانية -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         .reveal { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         .uqu-green { color: #00665E; font-weight: bold;}
         .uqu-gold { color: #D4A017; font-weight: bold;}
-        .icon-large { font-size: 4rem; color: #00665E; margin-bottom: 15px; }
+        .icon-large { font-size: 3.5rem; color: #00665E; margin-bottom: 10px; }
         .flex-box { display: flex; justify-content: space-around; align-items: center; margin-top: 20px;}
-        .card { padding: 20px; border: 2px solid #00665E; border-radius: 10px; width: 30%; box-shadow: 3px 3px 10px rgba(0,0,0,0.1); }
+        .card { padding: 15px; border: 2px solid #00665E; border-radius: 10px; width: 30%; box-shadow: 3px 3px 10px rgba(0,0,0,0.1); }
         .small-text { font-size: 0.6em; line-height: 1.5; }
         .highlight { background-color: #e6f2f1; padding: 10px; border-radius: 5px; border-left: 4px solid #D4A017; }
-        .result-box {
-            background: #f9f9f9;
-            padding: 10px;
-            border-radius: 8px;
-            border-left: 4px solid #00665E;
-        }
-        .chart-container {
-            background: white; 
-            padding: 10px; 
-            border-radius: 10px; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+        .footer-ref { position: absolute; bottom: 10px; right: 20px; font-size: 0.35em; color: gray; }
+        .chart-container { background: white; padding: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
     </style>
 </head>
 <body>
@@ -39,349 +26,135 @@
 <div class="reveal">
     <div class="slides">
 
-        <!-- Slide 1: Title -->
         <section>
             <i class="fas fa-university icon-large uqu-gold"></i>
             <h3 class="uqu-green">Effect of Dietary Habits During Ramadan on Premenstrual Syndrome</h3>
-            <h4 style="color: gray;">A Cross-Sectional Study</h4>
-            <br>
+            <h4 style="color: gray; font-size: 0.8em;">A Cross-Sectional Study among Females in Makkah</h4>
             <p class="small-text"><strong>Presented by:</strong> Talen Bugis, Layan Khayyat, Sara Alsayed, Amera ALsulimani</p>
             <p class="small-text"><strong>Supervised by:</strong> Dr. Walaa Essam Alhassani</p>
-            <p class="small-text uqu-gold">Umm Al-Qura University - Clinical Nutrition Department</p>
+            <p class="small-text uqu-gold">UQU - Clinical Nutrition Department</p>
         </section>
 
-        <!-- Slide 2: Background -->
         <section>
             <h3 class="uqu-green"><i class="fas fa-book-medical"></i> Background</h3>
             <div class="flex-box">
                 <div class="card">
-                    <i class="fas fa-female icon-large"></i>
-                    <h4>PMS</h4>
-                    <p class="small-text">Impacts emotional & physical well-being of reproductive-age women.</p>
+                    <i class="fas fa-hamburger icon-large"></i>
+                    <p class="small-text"><strong>Dietary Impact:</strong> Modifiable factors like fats/caffeine are core PMS modulators.</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-moon icon-large uqu-gold"></i>
-                    <h4>Ramadan</h4>
-                    <p class="small-text">Drastic changes: fasting, late-night wakefulness, altered diet.</p>
+                    <p class="small-text"><strong>Ramadan:</strong> Drastic shifts in meal timing (Iftar/Suhoor) and sleep-wake cycles.</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-hamburger icon-large"></i>
-                    <h4>Dietary Shifts</h4>
-                    <p class="small-text">High intake of fried foods, sweets, and caffeine at Iftar/Suhoor.</p>
+                    <i class="fas fa-pills icon-large"></i>
+                    <p class="small-text"><strong>Complexity:</strong> PMS affects emotional/physical well-being globally.</p>
                 </div>
             </div>
+            <div class="footer-ref">Zendehdel et al. (2017); Modzelewski et al. (2024); Faris et al. (2020)</div>
         </section>
 
-        <!-- Slide 3: Problem & Significance -->
         <section>
-            <h3 class="uqu-green"><i class="fas fa-search-location"></i> Problem & Significance</h3>
-            <div style="display: flex; align-items: center; justify-content: space-around;">
-                <div style="width: 50%; text-align: left;">
-                    <ul>
-                        <li class="small-text"><strong>The Gap:</strong> Specific impact of Ramadan habits on PMS among young women in <em>Makkah</em> remains unexplored.</li>
-                        <li class="small-text"><strong>The Need:</strong> Clinicians lack culturally appropriate evidence.</li>
-                        <li class="small-text highlight" style="border-left: 4px solid #00665E;"><strong>Significance:</strong> Provides evidence to help dietitians offer tailored recommendations.</li>
-                    </ul>
-                </div>
-                <div style="width: 40%;">
-                    <i class="fas fa-map-marked-alt" style="font-size: 8rem; color: #D4A017;"></i>
-                </div>
-            </div>
-        </section>
-
-        <!-- Slide 4: Objectives & Hypotheses -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-bullseye"></i> Objectives & Hypotheses</h3>
-            <p class="small-text">To investigate the relationship between Ramadan lifestyle changes and PMS severity:</p>
-            <div class="flex-box">
-                <div><i class="fas fa-utensils uqu-gold" style="font-size: 2rem;"></i><br><span class="small-text">Dietary Habits</span></div>
-                <div><i class="fas fa-bed uqu-gold" style="font-size: 2rem;"></i><br><span class="small-text">Sleep Quality</span></div>
-                <div><i class="fas fa-running uqu-gold" style="font-size: 2rem;"></i><br><span class="small-text">Physical Activity</span></div>
-                <div><i class="fas fa-weight uqu-gold" style="font-size: 2rem;"></i><br><span class="small-text">BMI</span></div>
-            </div>
-            <div class="highlight small-text" style="margin-top: 20px; text-align: left;">
-                <strong><i class="fas fa-lightbulb uqu-gold"></i> Hypothesis:</strong> We hypothesize that high consumption of fried foods and caffeine, along with poor sleep quality during Ramadan, will be positively correlated with an increase in PMS severity. 
-                <br><span style="color: gray; font-size: 0.8em;"><em>(Based on Mighani et al., 2025 & Siminiuc & Turcanu, 2023)</em></span>
-            </div>
-        </section>
-
-        <!-- Slide 5: Methodology - Design Flowchart -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-sitemap"></i> Methodology: Study Design</h3>
+            <h3 class="uqu-green"><i class="fas fa-sitemap"></i> Methodology: Design</h3>
             <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 40px;">
-                
-                <!-- Step 1: Target -->
-                <div class="card" style="width: 22%; text-align: center; padding: 10px;">
-                    <i class="fas fa-map-marker-alt icon-large uqu-gold"></i>
-                    <h5 style="margin: 5px 0; font-size: 0.9em;">Target</h5>
-                    <p class="small-text">Females (18-40)<br>Makkah Region</p>
+                <div class="card" style="width: 22%; padding: 10px;">
+                    <i class="fas fa-map-marker-alt icon-large uqu-gold" style="font-size: 1.5rem;"></i>
+                    <h6 style="margin: 5px 0;">Target</h6>
+                    <p style="font-size: 0.4em;">Females (18-40) in Makkah</p>
                 </div>
-
-                <i class="fas fa-arrow-right" style="color: #00665E; font-size: 2rem;"></i>
-
-                <!-- Step 2: Inclusion -->
-                <div class="card" style="width: 22%; text-align: center; padding: 10px; border-color: #28a745;">
-                    <i class="fas fa-check-circle icon-large" style="color: #28a745;"></i>
-                    <h5 style="margin: 5px 0; font-size: 0.9em;">Inclusion</h5>
-                    <p class="small-text">Regular Menstrual Cycle (Last 3 months)</p>
+                <i class="fas fa-arrow-right" style="color: #00665E;"></i>
+                <div class="card" style="width: 22%; padding: 10px; border-color: #28a745;">
+                    <i class="fas fa-check-circle icon-large" style="color: #28a745; font-size: 1.5rem;"></i>
+                    <h6 style="margin: 5px 0;">Inclusion</h6>
+                    <p style="font-size: 0.4em;">Regular Menstrual Cycle</p>
                 </div>
-
-                <i class="fas fa-arrow-right" style="color: #00665E; font-size: 2rem;"></i>
-
-                <!-- Step 3: Exclusion -->
-                <div class="card" style="width: 22%; text-align: center; padding: 10px; border-color: #dc3545;">
-                    <i class="fas fa-times-circle icon-large" style="color: #dc3545;"></i>
-                    <h5 style="margin: 5px 0; font-size: 0.9em;">Exclusion</h5>
-                    <p class="small-text">Pregnancy, Hormones, Chronic/Psychiatric Illness</p>
+                <i class="fas fa-arrow-right" style="color: #00665E;"></i>
+                <div class="card" style="width: 22%; padding: 10px; border-color: #dc3545;">
+                    <i class="fas fa-times-circle icon-large" style="color: #dc3545; font-size: 1.5rem;"></i>
+                    <h6 style="margin: 5px 0;">Exclusion</h6>
+                    <p style="font-size: 0.4em;">Pregnancy / Hormonal Meds</p>
                 </div>
-
-                <i class="fas fa-arrow-right" style="color: #00665E; font-size: 2rem;"></i>
-
-                <!-- Step 4: Final Sample -->
-                <div class="card" style="width: 22%; text-align: center; padding: 10px; background-color: #00665E; color: white;">
-                    <i class="fas fa-users icon-large" style="color: white;"></i>
-                    <h5 style="margin: 5px 0; color: white; font-size: 0.9em;">Final Sample</h5>
-                    <p class="small-text" style="color: #e6f2f1; font-size: 1.2em; font-weight: bold;">N = 121</p>
+                <i class="fas fa-arrow-right" style="color: #00665E;"></i>
+                <div class="card" style="width: 22%; padding: 10px; background-color: #00665E; color: white;">
+                    <i class="fas fa-users icon-large" style="color: white; font-size: 1.5rem;"></i>
+                    <h6 style="margin: 5px 0; color: white;">Final N</h6>
+                    <p style="font-size: 0.6em; font-weight: bold;">121 Participants</p>
                 </div>
-
             </div>
-            <!-- الملاحظة الأولى المُعدلة: تمت إضافة إشارة الموافقة الأخلاقية هنا -->
-            <p class="small-text" style="color:gray; margin-top:20px; text-align: left;">
-                * Cross-sectional observation-based survey.<br>
-                <strong>* Approved by UQU Biomedical Ethics Committee & Informed Consent obtained.</strong>
-            </p>
+            <p class="small-text highlight" style="margin-top:25px;"><strong>* Ethical Approval:</strong> Obtained from UQU Biomedical Ethics Committee.</p>
         </section>
 
-        <!-- Slide 6: Methodology - Design Details -->
         <section>
-            <h3 class="uqu-green"><i class="fas fa-users"></i> Methodology: Study Design Details</h3>
-            <div class="card" style="width: 80%; margin: auto;">
-                <ul class="small-text">
-                    <li><strong>Design:</strong> Observation-based cross-sectional survey.</li>
-                    <li><strong>Sample:</strong> 121 females (18-40 years) from UQU & community.</li>
-                    <li><strong>Inclusion:</strong> Regular menstrual cycle.</li>
-                    <li><strong>Exclusion:</strong> Pregnancy, hormonal birth control, chronic/psychiatric illnesses.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Slide 7: Methodology - Measurement Tools Grid -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-toolbox"></i> Methodology: Measurement Tools</h3>
+            <h3 class="uqu-green"><i class="fas fa-toolbox"></i> Validated Tools</h3>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;">
-                
-                <div class="card" style="width: 28%; text-align: center; padding: 10px;">
-                    <i class="fas fa-calendar-alt icon-large uqu-gold"></i>
-                    <h4 style="margin-bottom: 5px; color: #00665E;">DRSP</h4>
-                    <p class="small-text">PMS Severity</p>
+                <div class="card" style="width: 28%; padding: 10px;">
+                    <h5 style="color: #00665E; margin:0;">DRSP</h5>
+                    <p style="font-size: 0.45em;">PMS Severity (Arabic Validated)</p>
                 </div>
-
-                <div class="card" style="width: 28%; text-align: center; padding: 10px;">
-                    <i class="fas fa-utensils icon-large uqu-gold"></i>
-                    <h4 style="margin-bottom: 5px; color: #00665E;">FFQ</h4>
-                    <p class="small-text">Dietary Habits</p>
+                <div class="card" style="width: 28%; padding: 10px;">
+                    <h5 style="color: #00665E; margin:0;">PSQI</h5>
+                    <p style="font-size: 0.45em;">Sleep Quality (Global Standard)</p>
                 </div>
-
-                <div class="card" style="width: 28%; text-align: center; padding: 10px;">
-                    <i class="fas fa-bed icon-large uqu-gold"></i>
-                    <h4 style="margin-bottom: 5px; color: #00665E;">PSQI</h4>
-                    <p class="small-text">Sleep Quality</p>
+                <div class="card" style="width: 28%; padding: 10px;">
+                    <h5 style="color: #00665E; margin:0;">PHQ-9</h5>
+                    <p style="font-size: 0.45em;">Depression (Clinically Proven)</p>
                 </div>
-
-                <div class="card" style="width: 28%; text-align: center; padding: 10px;">
-                    <i class="fas fa-brain icon-large uqu-gold"></i>
-                    <h4 style="margin-bottom: 5px; color: #00665E;">PHQ-9</h4>
-                    <p class="small-text">Depression Scale</p>
+                <div class="card" style="width: 28%; padding: 10px;">
+                    <h5 style="color: #00665E; margin:0;">FFQ</h5>
+                    <p style="font-size: 0.45em;">Ramadan-specific Dietary Recall</p>
                 </div>
-
-                <div class="card" style="width: 28%; text-align: center; padding: 10px;">
-                    <i class="fas fa-running icon-large uqu-gold"></i>
-                    <h4 style="margin-bottom: 5px; color: #00665E;">IPAQ</h4>
-                    <p class="small-text">Physical Activity</p>
+                <div class="card" style="width: 28%; padding: 10px; border-style: dashed;">
+                    <h5 style="color: gray; margin:0;">IPAQ-SF</h5>
+                    <p style="font-size: 0.45em;">Physical Activity METs</p>
                 </div>
-
-                <div class="card" style="width: 28%; text-align: center; padding: 10px; background-color: #f9f9f9; border-style: dashed;">
-                    <i class="fas fa-laptop-code icon-large" style="color: gray;"></i>
-                    <h4 style="margin-bottom: 5px; color: gray;">SPSS</h4>
-                    <p class="small-text">Data Analysis</p>
-                </div>
-
             </div>
+            <p style="font-size: 0.4em; color: gray; margin-top: 15px;">Rationale: Using gold-standard, Arabic-validated tools ensures reliability & cultural relevance (Mahfoud et al., 2018).</p>
         </section>
 
-        <!-- Slide 8: Methodology - Measurement Tools Details -->
         <section>
-            <h3 class="uqu-green"><i class="fas fa-clipboard-list"></i> Methodology: Measurement Tools Details</h3>
-            
-            <div class="result-box small-text" style="margin-top:10px; text-align: left;">
-                <strong>Why these tools?</strong><br>
-                DRSP: PMS severity<br>
-                PHQ-9: Depression assessment<br>
-                PSQI: Sleep quality<br>
-                IPAQ: Physical activity<br>
-                FFQ: Dietary patterns
-            </div>
-            <br>
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-                <span class="highlight small-text" style="background-color: #ffe6e6; border-left: 4px solid red;">BMI: Self-reported</span>
-            </div>
-            <br>
-            <div class="highlight small-text" style="text-align: left; margin-top: 10px;">
-                <strong><i class="fas fa-laptop-code uqu-gold"></i> Statistical Analysis:</strong> SPSS utilized for bivariate analysis (t-tests, ANOVA) and non-parametric correlations.
-            </div>
-        </section>
-
-        <!-- Slide 9: Results - Baseline & BMI -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-chart-pie"></i> Results: Baseline & BMI</h3>
-            <div style="display: flex; align-items: center; justify-content: space-between;">
-                <!-- Pie Chart for BMI -->
-                <div style="width: 50%;">
-                    <div class="chart-container" style="width: 100%;">
-                        <canvas id="bmiChart"></canvas>
-                    </div>
+            <h3 class="uqu-green"><i class="fas fa-running"></i> Results: Physical Activity</h3>
+            <div style="display: flex; align-items: center; justify-content: space-around;">
+                <div class="chart-container" style="width: 50%;">
+                    <canvas id="activityChart"></canvas>
                 </div>
-                <!-- Original Text Cards -->
-                <div style="width: 45%; display: flex; flex-direction: column; gap: 10px;">
-                    <div class="card" style="width: 100%; padding: 10px;">
-                        <i class="fas fa-birthday-cake icon-large" style="font-size: 2rem;"></i>
-                        <p class="small-text"><strong>Mean Age:</strong> 23.14 ± 6.10 years</p>
-                    </div>
-                    <div class="card" style="width: 100%; padding: 10px;">
-                        <i class="fas fa-user-graduate icon-large" style="font-size: 2rem;"></i>
-                        <p class="small-text"><strong>Students:</strong> 72.7%</p>
-                    </div>
-                    <div class="card" style="width: 100%; padding: 10px;">
-                        <i class="fas fa-weight-hanging icon-large uqu-gold" style="font-size: 2rem;"></i>
-                        <p class="small-text"><strong>Normal BMI:</strong> 59.5%</p>
+                <div style="width: 40%; text-align: left;">
+                    <p class="small-text"><strong>Findings:</strong> 60% Inactive. No significant link to PMS.</p>
+                    <div class="highlight" style="font-size: 0.5em;">
+                        <strong>Interpretation:</strong> Fasting lethargy and the cultural shift to night-time rest likely suppressed activity levels, limiting statistical variance (n=105).
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 10: Results - Dietary Habits Overview -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-chart-bar"></i> Results: Dietary Habits</h3>
-            <div class="chart-container" style="width: 70%; margin: auto;">
-                <canvas id="dietaryChart"></canvas>
-            </div>
-            <p class="small-text" style="color:gray; margin-top:10px;">
-                High prevalence of caffeine (43%) and fried food (33.1%) intake during Ramadan may contribute to increased PMS severity.
-            </p>
-        </section>
-
-        <!-- Slide 11: Results - Caffeine & PMS -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-coffee"></i> Association: Caffeine & PMS</h3>
-            <div class="chart-container" style="width: 60%; margin: auto;">
-                <canvas id="caffeineChart"></canvas>
-            </div>
-            <p class="small-text" style="color:gray; margin-top: 10px;">
-                <i class="fas fa-arrow-up"></i> Clear increase in PMS severity with caffeine consumption (p < 0.001)
-            </p>
-            <div class="result-box small-text" style="width: 70%; margin: 10px auto; border-left: 4px solid #D4A017; padding: 5px;">
-                <i class="fas fa-utensils"></i> <strong>Note:</strong> Fried Food also showed a moderate significant association (p = 0.046).
-            </div>
-        </section>
-
-        <!-- Slide 12: Results - Sleep & Depression -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-bed"></i> Sleep & Depression vs PMS</h3>
-            <div class="chart-container" style="width: 70%; margin: auto;">
-                <canvas id="pmsClusteredChart"></canvas>
-            </div>
-            <p class="small-text" style="color:gray; margin-top: 10px;">
-                <i class="fas fa-link"></i> <strong>Strong positive association:</strong> Both poorer sleep (PSQI) and higher depression (PHQ-9) strongly correlate with severe PMS (p < 0.001).
-            </p>
-        </section>
-
-        <!-- Slide 13: Results - Physical Activity -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-running"></i> Results: Physical Activity (IPAQ)</h3>
-            <div class="chart-container" style="width: 60%; margin: auto;">
-                <canvas id="activityChart"></canvas>
-            </div>
-            <!-- الملاحظة الثانية المُعدلة: تمت إضافة التنويه عن عدد العينة بعد التنظيف -->
-            <p class="small-text" style="color:gray; margin-top: 10px;">
-                <i class="fas fa-info-circle uqu-gold"></i> 60% of participants were strictly inactive during Ramadan. No significant association with PMS severity was found (p > 0.05).<br>
-                <span style="color: #00665E;"><strong>* Note:</strong> Analyzed sample size for physical activity is n=105 (after rigorous data cleaning).</span>
-            </p>
-        </section>
-
-<!-- Slide 14: Discussion -->
         <section>
             <h3 class="uqu-green"><i class="fas fa-comments"></i> Discussion</h3>
             <ul class="small-text" style="text-align: left; margin-top: 20px;">
-                <li style="margin-bottom: 15px;">
-                    <strong>Interpretation:</strong> Findings suggest that caffeine, fried food, and poor sleep are associated with increased PMS severity through hormonal and inflammatory mechanisms.
-                </li>
-                <li style="margin-bottom: 15px;">
-                    <i class="fas fa-check-circle uqu-green"></i> <strong>Diet & Sleep:</strong> High fried food, caffeine, and poor sleep exacerbated PMS, aligning with Siminiuc & Turcanu (2023) and Mighani et al. (2025).
-                </li>
-                <li>
-                    <i class="fas fa-info-circle uqu-gold"></i> <strong>Physical Activity Insight:</strong> The lack of association may be attributed to our imbalanced sample size, as 60% of our respondents reported being strictly inactive during Ramadan.
-                </li>
+                <li style="margin-bottom: 10px;"><strong>Key Link:</strong> Fried foods and caffeine directly exacerbate PMS symptoms.</li>
+                <li style="margin-bottom: 10px;"><strong>Biological Path:</strong> High-fat diets may trigger systemic inflammation (Prostaglandins).</li>
+                <li style="margin-bottom: 10px;"><strong>Sleep Triad:</strong> Poor sleep strongly correlates with both PMS and depression (p < 0.001).</li>
+                <li><strong>Short Window:</strong> Healthy food impact may need >1 month to show biological effects.</li>
             </ul>
+            <div class="footer-ref">Siminiuc & Turcanu (2023); Mighani et al. (2025)</div>
         </section>
 
-        <!-- Slide 15: Critique (Strengths & Limitations) -->
         <section>
             <h3 class="uqu-green"><i class="fas fa-balance-scale"></i> Critique</h3>
             <div class="flex-box" style="align-items: stretch; gap: 20px;">
-                <div class="card" style="border-color: green; width: 45%; display: flex; flex-direction: column; justify-content: center;">
-                    <h4 style="color: green; margin-top: 0;">Strengths</h4>
-                    <p class="small-text" style="margin: 0;">First culturally specific baseline data exploring Ramadan lifestyle alterations & PMS in the Makkah region.</p>
+                <div class="card" style="border-color: green; width: 45%;">
+                    <h5 style="color: green; margin: 0;">Strengths</h5>
+                    <p style="font-size: 0.5em;">First culturally-specific study in Makkah exploring Ramadan's unique lifestyle/PMS intersection.</p>
                 </div>
-                <div class="card" style="border-color: orange; text-align: left; width: 45%; display: flex; flex-direction: column; justify-content: center;">
-                    <h4 style="color: orange; text-align: center; margin-top: 0;">Limitations</h4>
-                    <p class="small-text" style="margin: 0;">
-                        <i class="fas fa-times" style="color: red;"></i> Cross-sectional design limits causality.<br>
-                        <i class="fas fa-times" style="color: red;"></i> Self-reported data may introduce recall bias.<br>
-                        <i class="fas fa-times" style="color: red;"></i> Possible confounding variables (e.g., stress).<br>
-                        <i class="fas fa-times" style="color: red;"></i> Reverse causation cannot be excluded.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Slide 16: Clinical Application -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-user-md"></i> Clinical Practice Application</h3>
-            <div class="result-box" style="width: 80%; margin: auto;">
-                <p class="small-text">
-                    Healthcare providers and dietitians must utilize these findings to offer <strong>culturally tailored education</strong>. 
-                    <br><br>
-                    Focus should be placed on managing <strong>caffeine limits, reducing deep-fried foods</strong>, and enforcing <strong>good sleep hygiene</strong> to help women manage PMS during the holy month.
-                </p>
-            </div>
-        </section>
-
-        <!-- Slide 17: Conclusion & Future Work -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-lightbulb"></i> Conclusion & Future Work</h3>
-            <ul class="small-text" style="text-align: left;">
-                <li><strong>Conclusion:</strong> Unique lifestyle shifts in Ramadan are significantly associated with increased PMS severity and depression levels.</li>
-                <li class="highlight"><strong>Future Directions (Based on our findings):</strong> 
-                    <ul>
-                        <li>Conduct longitudinal studies to track patients before, during, and after Ramadan.</li>
-                        <li>Utilize objective clinical measurements to overcome self-reporting limitations.</li>
+                <div class="card" style="border-color: orange; text-align: left; width: 45%;">
+                    <h5 style="color: orange; text-align: center; margin: 0;">Limitations</h5>
+                    <ul style="font-size: 0.45em; margin: 0; padding-left: 15px;">
+                        <li>Cross-sectional (No causality)</li>
+                        <li>Self-reported (Recall bias)</li>
+                        <li>Small sample (121)</li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
 
-        <!-- Slide 18: References -->
-        <section>
-            <h3 class="uqu-green"><i class="fas fa-book"></i> References</h3>
-            <ul class="small-text" style="text-align: left; font-size: 0.55em; line-height: 1.8;">
-                <li><strong>Siminiuc, R., & Țurcanu, D. (2023).</strong> Impact of nutritional diet therapy on premenstrual syndrome. <em>Frontiers in Nutrition</em>, 10, 1079417.</li>
-                <li><strong>Mighani, S., et al. (2025).</strong> Association between sleep quality and premenstrual syndrome in young women in a cross-sectional study. <em>Scientific Reports</em>, 15(1), 6260.</li>
-                <li><strong>Kroll-Desrosiers, A. R., et al. (2017).</strong> Recreational physical activity and premenstrual syndrome in young adult women: A cross-sectional study. <em>PLOS ONE</em>, 12(1), e0169728.</li>
-                <li><strong>Al Zunaidy, N. A., et al. (2024).</strong> The effect of Ramadan intermittent fasting on anthropometric, hormonal, metabolic... markers. <em>Frontiers in Nutrition</em>, 11, 1437169.</li>
-            </ul>
-        </section>
-
-        <!-- Slide 19: Q&A -->
         <section>
             <h1 class="uqu-green">Thank You!</h1>
             <i class="fas fa-question-circle icon-large uqu-gold"></i>
@@ -391,119 +164,24 @@
     </div>
 </div>
 
-<!-- زر الطباعة -->
-<button id="printBtn" style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; padding: 10px 20px; background-color: #D4A017; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <i class="fas fa-print"></i> Print Handout
-</button>
+<button id="printBtn" style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; padding: 10px 20px; background-color: #D4A017; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;"><i class="fas fa-print"></i> Print Handout</button>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
 <script>
-    // تفعيل مكتبة Reveal.js للعرض
-    // الملاحظة الثالثة المُعدلة: تمت إضافة ترقيم الشرائح "slideNumber: true"
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        center: true,
-        hash: true,
-        slideNumber: true, 
-        transition: 'slide'
-    });
+    Reveal.initialize({ controls: true, progress: true, center: true, hash: true, slideNumber: true, transition: 'slide' });
+    document.getElementById('printBtn').addEventListener('click', () => { window.location.search = '?print-pdf'; });
+    if (window.location.search.match(/print-pdf/gi)) { setTimeout(() => { window.print(); }, 1500); }
 
-    // سكريبت الطباعة للزر
-    document.getElementById('printBtn').addEventListener('click', function() {
-        if (!window.location.search.match(/print-pdf/gi)) {
-            window.location.search = '?print-pdf';
-        } else {
-            window.print();
-        }
-    });
-
-    if (window.location.search.match(/print-pdf/gi)) {
-        setTimeout(function() { 
-            window.print(); 
-        }, 1500);
-    }
-
-    // رسم جميع المخططات البيانية بعد تحميل الصفحة
     document.addEventListener("DOMContentLoaded", function() {
-        
-        // 1. BMI Pie Chart
-        var ctxBmi = document.getElementById('bmiChart').getContext('2d');
-        new Chart(ctxBmi, {
-            type: 'pie',
-            data: {
-                labels: ['Underweight (16.5%)', 'Normal (59.5%)', 'Overweight (16.5%)', 'Obesity (7.4%)'],
-                datasets: [{
-                    data: [16.5, 59.5, 16.5, 7.4],
-                    backgroundColor: ['#FFCD56', '#4BC0C0', '#36A2EB', '#FF6384']
-                }]
-            },
-            options: { responsive: true, plugins: { legend: { position: 'right', labels: {font: {size: 10}} } } }
-        });
-
-        // 2. Dietary Habits Overview Chart
-        var ctxDiet = document.getElementById('dietaryChart').getContext('2d');
-        new Chart(ctxDiet, {
-            type: 'bar',
-            data: {
-                labels: ['Caffeine', 'Fried Food', 'Dates', 'Sweets'],
-                datasets: [{
-                    label: 'Daily Consumption (%)',
-                    data: [43.0, 33.1, 57.0, 16.5],
-                    backgroundColor: ['#00665E', '#D4A017', '#8B4513', '#F4A460'],
-                    borderColor: '#333',
-                    borderWidth: 1
-                }]
-            },
-            options: { responsive: true, scales: { y: { beginAtZero: true, max: 100 } }, plugins: { legend: { display: false } } }
-        });
-
-        // 3. Caffeine vs PMS Chart
-        var ctxCaf = document.getElementById('caffeineChart').getContext('2d');
-        new Chart(ctxCaf, {
-            type: 'bar',
-            data: {
-                labels: ['No Caffeine', 'Caffeine Intake'],
-                datasets: [{
-                    label: 'Mean PMS Score',
-                    data: [49.85, 73.91],
-                    backgroundColor: ['#b3d1ce', '#00665E'],
-                    borderColor: '#00665E',
-                    borderWidth: 1
-                }]
-            },
-            options: { responsive: true, scales: { y: { beginAtZero: true } }, plugins: { legend: { display: false } } }
-        });
-
-        // 4. Sleep & Depression Clustered Chart
-        var ctxPms = document.getElementById('pmsClusteredChart').getContext('2d');
-        new Chart(ctxPms, {
-            type: 'bar',
-            data: {
-                labels: ['Normal PMS', 'Mild PMS', 'Moderate PMS', 'Severe PMS'],
-                datasets: [
-                    { label: 'Depression (PHQ-9)', data: [4.04, 8.88, 13.25, 22.00], backgroundColor: '#D4A017' },
-                    { label: 'Sleep (PSQI)', data: [3.79, 6.20, 7.79, 11.80], backgroundColor: '#00665E' }
-                ]
-            },
-            options: { responsive: true, scales: { y: { beginAtZero: true } }, plugins: { legend: { position: 'top' } } }
-        });
-
-        // 5. Physical Activity Bar Chart
         var ctxAct = document.getElementById('activityChart').getContext('2d');
         new Chart(ctxAct, {
             type: 'bar',
             data: {
                 labels: ['Inactive', 'Minimally Active', 'HEPA Active'],
-                datasets: [{
-                    label: '% of Participants',
-                    data: [60.0, 23.8, 16.2],
-                    backgroundColor: ['#FF6384', '#FFCE56', '#4BC0C0']
-                }]
+                datasets: [{ label: '% of Participants', data: [60.0, 23.8, 16.2], backgroundColor: ['#FF6384', '#FFCE56', '#4BC0C0'] }]
             },
-            options: { responsive: true, scales: { y: { beginAtZero: true, max: 100 } }, plugins: { legend: { display: false } } }
+            options: { responsive: true, plugins: { legend: { display: false } } }
         });
-
     });
 </script>
 </body>
